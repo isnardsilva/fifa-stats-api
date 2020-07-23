@@ -18,10 +18,12 @@ from django.urls import path
 from django.urls import include
 from rest_framework import routers
 from leagues.api.viewsets import LeagueViewSet
+from teams.api.viewsets import TeamViewSet
 
 
 router = routers.DefaultRouter()
 router.register(r'leagues', LeagueViewSet)
+router.register(r'teams', TeamViewSet)
 
 
 urlpatterns = [
