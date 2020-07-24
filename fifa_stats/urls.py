@@ -19,11 +19,16 @@ from django.urls import include
 from rest_framework import routers
 from leagues.api.viewsets import LeagueViewSet
 from teams.api.viewsets import TeamViewSet
-
+from foot.api.viewsets import FootViewSet
+from player_positions.api.viewsets import PlayerPositionViewSet
+from nationalities.api.viewsets import NationalityViewSet
 
 router = routers.DefaultRouter()
 router.register(r'leagues', LeagueViewSet)
 router.register(r'teams', TeamViewSet)
+router.register(r'foot', FootViewSet)
+router.register(r'player_positions', PlayerPositionViewSet)
+router.register(r'nationalities', NationalityViewSet)
 
 
 urlpatterns = [

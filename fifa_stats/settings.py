@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'leagues',
     'teams',
+    'foot',
+    'player_positions',
+    'nationalities',
 ]
 
 MIDDLEWARE = [
