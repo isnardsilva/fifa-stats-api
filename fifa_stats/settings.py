@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'foot',
     'player_positions',
     'nationalities',
+    'players',
 ]
 
 MIDDLEWARE = [

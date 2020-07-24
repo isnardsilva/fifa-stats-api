@@ -22,6 +22,7 @@ from teams.api.viewsets import TeamViewSet
 from foot.api.viewsets import FootViewSet
 from player_positions.api.viewsets import PlayerPositionViewSet
 from nationalities.api.viewsets import NationalityViewSet
+from players.api.viewsets import PlayerViewSet
 
 router = routers.DefaultRouter()
 router.register(r'leagues', LeagueViewSet)
@@ -29,6 +30,7 @@ router.register(r'teams', TeamViewSet)
 router.register(r'foot', FootViewSet)
 router.register(r'player_positions', PlayerPositionViewSet)
 router.register(r'nationalities', NationalityViewSet)
+router.register(r'players', PlayerViewSet)
 
 
 urlpatterns = [
