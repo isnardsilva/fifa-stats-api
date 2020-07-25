@@ -11,6 +11,7 @@ class Player(models.Model):
     long_name = models.CharField(max_length=300)
     date_of_birth = models.DateField('Date of Birth')
     height_cm = models.IntegerField()
+    weight_kg = models.IntegerField()
     nationality = models.ForeignKey(Nationality, on_delete=models.CASCADE, null=False)
     club = models.ForeignKey(Team, on_delete=models.CASCADE, null=False)
     overall = models.IntegerField()
