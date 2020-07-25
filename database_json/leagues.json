@@ -1,0 +1,1 @@
+[{"model": "leagues.league", "pk": 1, "fields": {"logo_url": "https://cdn.sofifa.com/flags/es@3x.png", "name": "Spain Primera Division", "division": 1, "country": 137}}]

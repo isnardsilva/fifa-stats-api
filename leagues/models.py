@@ -5,7 +5,9 @@ from nationalities.models import Nationality
 class League(models.Model):
     logo_url = models.CharField(max_length=300)
     name = models.CharField(max_length=150)
+    division = models.IntegerField()
     country = models.ForeignKey(Nationality, on_delete=models.CASCADE, null=False)
+
 
     def __str__(self):
         return self.name

@@ -5,4 +5,4 @@ from leagues.models import League
 class LeagueSerializar(ModelSerializer):
     class Meta:
         model = League
-        fields = ['id', 'logo_url', 'name', 'country']
+        fields = ['id', 'logo_url', 'name', 'division', 'country']
