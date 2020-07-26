@@ -1,1 +1,1 @@
-[{"model": "foot.foot", "fields": {"side": "Left"}}, {"model": "foot.foot", "fields": {"side": "Right"}}]
+[{"model": "foot.foot", "pk": 1, "fields": {"side": "Left"}}, {"model": "foot.foot", "pk": 2, "fields": {"side": "Right"}}]
