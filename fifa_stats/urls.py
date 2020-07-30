@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.urls import include
 from rest_framework import routers
+from rest_framework.authtoken import views
 from leagues.api.viewsets import LeagueViewSet
 from teams.api.viewsets import TeamViewSet
 from foot.api.viewsets import FootViewSet
@@ -25,15 +26,16 @@ from nationalities.api.viewsets import NationalityViewSet
 from players.api.viewsets import PlayerViewSet
 
 router = routers.DefaultRouter()
+# router.register(r'nationalities', NationalityViewSet)
 router.register(r'leagues', LeagueViewSet)
 router.register(r'teams', TeamViewSet)
-router.register(r'foot', FootViewSet)
-router.register(r'player_positions', PlayerPositionViewSet)
-router.register(r'nationalities', NationalityViewSet)
+# router.register(r'foot', FootViewSet)
+# router.register(r'player_positions', PlayerPositionViewSet)
 router.register(r'players', PlayerViewSet, basename='Player')
 
 
 urlpatterns = [
     path('', include(router.urls)),
     path('admin/', admin.site.urls),
+    path('api-token-auth/', views.obtain_auth_token)
 ]
