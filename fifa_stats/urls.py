@@ -30,7 +30,7 @@ router.register(r'teams', TeamViewSet)
 router.register(r'foot', FootViewSet)
 router.register(r'player_positions', PlayerPositionViewSet)
 router.register(r'nationalities', NationalityViewSet)
-router.register(r'players', PlayerViewSet)
+router.register(r'players', PlayerViewSet, basename='Player')
 
 
 urlpatterns = [
